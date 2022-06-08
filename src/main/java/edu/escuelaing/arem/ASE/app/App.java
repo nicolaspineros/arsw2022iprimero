@@ -10,20 +10,18 @@ public class App
 {
     public static void main( String[] args )
     {
-        //System.out.println( "Hello World! " + args[0] + "file: " + args[1]);
-        int contador = 0;
-        String archivoEntrada = args[1];
-        try {
-            FileReader lectorArchivo = new FileReader(archivoEntrada);
-            BufferedReader lectorLineas = new BufferedReader(lectorArchivo);
-            while (lectorLineas.readLine() != null){
-                contador++;
-            }
-            System.out.println(contador);
-            } catch (FileNotFoundException ex) {
-            throw new RuntimeException(ex);
-            } catch (IOException e) {
-            System.out.println(e);
+        String tipoContador = args[0];
+        String archivo = args[1];
+        switch (tipoContador){
+            case "phy":
+                PhyContador phyContador = new PhyContador();
+                System.out.println(phyContador.countLines(archivo));
+                break;
+            case "loc":
+                System.out.println("Metodo LOC");
+                LocContador locContador = new LocContador();
+                locContador.countLines(archivo);
+                break;
         }
     }
 }
