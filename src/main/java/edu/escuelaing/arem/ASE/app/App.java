@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * Hello world!
  *
- */
+ **/
 public class App 
 {
     public static void main( String[] args ) {
@@ -14,16 +14,18 @@ public class App
         try {
             archivo = new FileReader(args[1]);
         } catch (FileNotFoundException e) {throw new RuntimeException(e);}
+        BufferedReader lector = new BufferedReader(archivo);
         switch (tipoContador){
             case "phy":
                 PhyContador phyContador = new PhyContador();
-                System.out.println(phyContador.countLines(archivo));
+                System.out.println(phyContador.countLines(lector));
                 break;
             case "loc":
-                System.out.println("Metodo LOC");
                 LocContador locContador = new LocContador();
-                locContador.countLines(archivo);
+                System.out.println(locContador.countLines(lector));
                 break;
+            default:
+                System.out.println("Seleccione un metodo entre phy o loc");
         }
     }
 }

@@ -1,4 +1,3 @@
-`TODO: Copiar el texto de la licencia http://www.gnu.org/licenses/gpl.html' 
+`TODO: Copiar el texto de la licencia http://www.gnu.org/licenses/gpl.html'
 linea2
 linea3
-linea4

@@ -1,8 +1,8 @@
 package edu.escuelaing.arem.ASE.app;
 
-import java.io.FileReader;
+import java.io.BufferedReader;
 
 public interface Contador {
-    int countLines(FileReader archivo);
+    int countLines(BufferedReader archivo);
 
 }
