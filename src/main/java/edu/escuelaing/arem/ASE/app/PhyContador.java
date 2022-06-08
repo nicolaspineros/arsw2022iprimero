@@ -8,16 +8,12 @@ import java.io.IOException;
 public class PhyContador implements Contador{
     int contador;
     @Override
-    public int countLines(String archivo) {
-        FileReader lectorArchivo = null;
+    public int countLines(FileReader archivo) {
+        BufferedReader lectorLineas = new BufferedReader(archivo);
         try {
-            lectorArchivo = new FileReader(archivo);
-            BufferedReader lectorLineas = new BufferedReader(lectorArchivo);
             while (lectorLineas.readLine() != null){
                 contador++;
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

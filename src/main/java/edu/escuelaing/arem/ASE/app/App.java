@@ -8,10 +8,12 @@ import java.io.*;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
         String tipoContador = args[0];
-        String archivo = args[1];
+        FileReader archivo = null;
+        try {
+            archivo = new FileReader(args[1]);
+        } catch (FileNotFoundException e) {throw new RuntimeException(e);}
         switch (tipoContador){
             case "phy":
                 PhyContador phyContador = new PhyContador();

@@ -2,5 +2,6 @@
 
 ###
 
-* numero de lineas 1 -> 29
+* numero de lineas 11:30am a 1pm -> 29
+* numero de lineas 12pm a 1:50 -> 78
 * 
