@@ -26,4 +26,7 @@ sobreescribimos el metodo de conteo.
 ## LOC/h
 * numero de lineas 11:30am a 1pm -> 29
 * numero de lineas 12pm a 1:50 -> 60
-* numero de lineas 2:50 a 4:05 -> 
+* numero de lineas 2:50 a 4:05 -> 80
+
+### LOC = (169/4,6h) = 36
+
