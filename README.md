@@ -30,3 +30,5 @@ sobreescribimos el metodo de conteo.
 
 ### LOC = (169/4,6h) = 36
 
+### comando para generar javadoc
+* mvn javadoc:javadoc

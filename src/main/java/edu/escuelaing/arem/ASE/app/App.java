@@ -3,8 +3,9 @@ package edu.escuelaing.arem.ASE.app;
 import java.io.*;
 
 /**
- * Hello world!
- *
+ * Clase Main que recibe los argumentos
+ * arg[0] = tipo de conteo
+ * arg[1] = archivo para hacer el conteo
  **/
 public class App 
 {
